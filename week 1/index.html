@@ -51,9 +51,14 @@
          */
 
         /*Funciones*/
-
         var username = prompt("Como se llama el cumpleañero?");
-        document.write("<h1>🍺Feliz cumpleaños " + username + "!!🍺</h1>");
+
+        /*Condicionales*/
+        if (username === "Víctor") {
+            document.write("<h1>🍺Feliz cumpleaños " + username + "!!🍺</h1>");
+        } else {
+            document.write("<h1>" + "Tu no eres el cumpleañero" + "</h1>");
+        }
     </script>
 </head>
 
