@@ -11,11 +11,11 @@
     <script>
         alert("This is the homework one on my JavaScript course");
         var userName = prompt("Who are you? Please tell me your name");
-        var carsModel = ["Audi", "Tucson", "Toyota", "Ferrari", "BMW"];
+        var carsModel = ["Audi", "Hyundai", "Toyota", "Ferrari", "BMW"];
         var randomNumber = Math.floor(Math.random() * carsModel.length);
         var myImage = document.createElement("img");
         var myCarImages = document.createElement("img")
-        var myCarMatriz = ['<pictures/AUDI.jpg', 'pictures/TUCSON.jpg', 'pictures/TOYOTA.jpg', 'pictures/FERRARI.jpg', 'pictures/BMW.jpg'];
+        var myCarMatriz = ['pictures/AUDI.jpg', 'pictures/TUCSON.jpg', 'pictures/TOYOTA.jpg', 'pictures/FERRARI.jpg', 'pictures/BMW.jpg'];
 
         var carSelector = myCarMatriz[randomNumber];
 
@@ -26,6 +26,7 @@
         myCarImages.setAttribute('src', myCarMatriz[randomNumber]);
         myCarImages.setAttribute('height', '30%');
         myCarImages.setAttribute('width', '30%');
+
 
         if (userName === "Chris" || userName === "Julio") {
             document.write("<h1> Hi! " + userName + " you won a car model " + carsModel[randomNumber] + " </h1>");
@@ -38,6 +39,7 @@
 </head>
 
 <body id="principal">
+    <img src="pictures/OPRAH.jpeg">
 </body>
 
 </html>

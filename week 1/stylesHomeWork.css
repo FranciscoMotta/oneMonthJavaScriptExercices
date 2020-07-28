@@ -11,4 +11,15 @@
     margin: 10px 10px 10px 10px;
     border: 10px dashed red;
     text-align: center;
+    background: burlywood;
+}
+
+h1 {
+    text-align: center;
+    color: brown;
+}
+
+img {
+    height: 25%;
+    width: 25%;
 }
