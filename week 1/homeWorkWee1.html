@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>One Month home Work</title>
+    <meta name="author" content="Julio Francisco Motta" />
+    <meta charset="utf-8" />
+    <meta name="description" content="Homework week 1 one month JavaScript" />
+    <meta name="keywords" content="One month, homework, JavaScript" />
+    <link rel="stylesheet" href="stylesHomeWork.css">
+    <script>
+        alert("This is the homework one on my JavaScript course");
+        var userName = prompt("Who are you? Please tell me your name");
+        var carsModel = ["Audi", "Tucson", "Toyota", "Ferrari", "BMW"];
+        var randomNumber = Math.floor(Math.random() * carsModel.length);
+        var myImage = document.createElement("img");
+        var myCarImages = document.createElement("img")
+        var myCarMatriz = ['<pictures/AUDI.jpg', 'pictures/TUCSON.jpg', 'pictures/TOYOTA.jpg', 'pictures/FERRARI.jpg', 'pictures/BMW.jpg'];
+
+        var carSelector = myCarMatriz[randomNumber];
+
+        myImage.setAttribute('src', 'pictures/5c35143a210000a20bcb9526.jpeg');
+        myImage.setAttribute('height', '30%');
+        myImage.setAttribute('width', '30%');
+
+        myCarImages.setAttribute('src', myCarMatriz[randomNumber]);
+        myCarImages.setAttribute('height', '30%');
+        myCarImages.setAttribute('width', '30%');
+
+        if (userName === "Chris" || userName === "Julio") {
+            document.write("<h1> Hi! " + userName + " you won a car model " + carsModel[randomNumber] + " </h1>");
+            document.body.appendChild(myCarImages);
+        } else {
+            document.write("<h1> Sorry you dont't won a car");
+            document.body.appendChild(myImage);
+        }
+    </script>
+</head>
+
+<body id="principal">
+</body>
+
+</html>

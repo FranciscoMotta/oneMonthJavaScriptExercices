@@ -1,0 +1,14 @@
+#titleOne {
+    text-align: center;
+    color: black;
+    font-family: Arial;
+    font-size: 70;
+    font-weight: bold;
+}
+
+#principal {
+    background-color: white;
+    margin: 10px 10px 10px 10px;
+    border: 10px dashed red;
+    text-align: center;
+}
