@@ -5,13 +5,22 @@
 <head>
     <meta charset="utf-8">
     <title>Mr. JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+    <h1>JS One Month Course</h1>
 </head>
 
 <body>
-    <h1>I'm Mr. JavaScript</h1>
+    <h2>I'm Mr. JavaScript</h2>
     <a href="#">Hey JavaScript, how are you feeling?</a>
     <script type="text/javascript">
         console.log("We good?");
+        var varOne = document.querySelector("h2"); //Me permite coger elementos HTML    
+        varOne.innerHTML = "I'm alive";
+        console.log(varOne); //Mostramos por consola lo que tomamos en document.querySelector();
+
+        var adressOne = document.querySelector("a");
+        adressOne.innerHTML = "I'm alive";
+        console.log(adressOne);
     </script>
 </body>
 
