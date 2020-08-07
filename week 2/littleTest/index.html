@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <title>test True False</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Francisco">
+    <link rel="stylesheet" href="styles.css">
+    <h1>Un test para probar el querySelector() y el addEventListener()</h1>
+</head>
+
+<body>
+
+    <h2>Pregunta: ¿La inteligencia artificial es igual al machine learning?</h2>
+    <img src="pictures/inteligencia-artificial.jpg" alt="I.A." class="foto">
+    <h2 class="respuesta">ANSWER</h2>
+    <ul>
+        <li>
+            <a href="#" class="false">Obvio microbio</a>
+        </li>
+        <li>
+            <a href="#" class="true">Nelson</a>
+        </li>
+    </ul>
+    <script>
+        var varTwo = document.querySelector(".true");
+        var varOne = document.querySelector(".false");
+
+        varOne.addEventListener('click', function() {
+            alert("respuesta recibida");
+            var textAns = document.querySelector(".respuesta");
+            textAns.innerHTML = "INCORRECTO";
+        });
+
+
+        varTwo.addEventListener('click', function() {
+            alert("respuesta recibida");
+            var textAns = document.querySelector(".respuesta");
+            textAns.innerHTML = "CORRECTO";
+        });
+    </script>
+</body>
+
+</html>

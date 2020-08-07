@@ -1,0 +1,19 @@
+head,
+body {
+    text-align: center;
+    margin: 10%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    color: brown;
+}
+
+ul,
+li {
+    text-align: left;
+    color: darkblue;
+}
+
+.foto {
+    height: 250px;
+    width: 500px;
+}

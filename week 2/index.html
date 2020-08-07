@@ -11,18 +11,26 @@
 
 <body>
     <h2>I'm Mr. JavaScript</h2>
-    <a href="#">Hey JavaScript, how are you feeling?</a>
+    <a href="#" class="clase1">Hey JavaScript, how are you feeling?</a>
+    <a href="#" class="clase2">Hola pe</a>
     <script type="text/javascript">
         console.log("We good?");
 
-        var adressOne = document.querySelector("a");
-        // adressOne.innerHTML = "I'm alive";
-        // console.log(adressOne);
+        var adressOne = document.querySelector(".clase1");
+        var adressTwo = document.querySelector(".clase2")
+            // adressOne.innerHTML = "I'm alive";
+            // console.log(adressOne);
         adressOne.addEventListener('click', function() {
             alert("You are clicking");
             var varOne = document.querySelector("h2"); //Me permite coger elementos HTML    
             varOne.innerHTML = "I'm alive";
             console.log(varOne); //Mostramos por consola lo que tomamos en document.querySelector();
+        });
+        adressTwo.addEventListener('click', function() {
+            alert("You are clicking");
+            var varOne = document.querySelector("h2"); //Me permite coger elementos HTML    
+            varOne.innerHTML = "I'm Mr. JavaScript";
+
         });
     </script>
 </body>
