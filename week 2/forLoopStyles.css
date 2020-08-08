@@ -1,0 +1,11 @@
+head,
+body {
+    text-align: center;
+    color: firebrick;
+    font-size: 35px;
+    margin: 10%;
+    border: black solid 3px;
+    border-width: 2px;
+    padding: 5%;
+    font-family: fantasy;
+}
