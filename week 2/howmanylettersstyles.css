@@ -1,0 +1,13 @@
+head,
+body {
+    text-align: center;
+    color: darkred;
+    font-size: 40px;
+    margin: 10%;
+    font-family: fantasy;
+}
+
+h2 {
+    font-size: 25px;
+    color: darkslateblue;
+}
